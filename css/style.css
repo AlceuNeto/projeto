@@ -39,7 +39,7 @@ header{
 
 .kuromi{    
     margin-top: 35px;
-    width: 447px;
+    width: 33%; 
 
     
 
@@ -180,3 +180,26 @@ footer{
     background-color: #ddc1db;
     opacity: 0.5;
 }
+
+
+.slideshow {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .kuromi {
+    display: none;
+    width: 50%;
+    margin:auto;
+    transition: opacity 1s ease;
+  }
+ 
+  @keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .active {
+    display: block;
+    opacity: 1      ; 
+  }
